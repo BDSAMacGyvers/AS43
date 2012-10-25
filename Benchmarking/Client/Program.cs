@@ -17,7 +17,25 @@ namespace Client
                 int status = client.RequestStatus();
                 Console.WriteLine("Current CPUS available: {0}", status);
                 Console.WriteLine("Submitting Job");
-                bool success = client.ReceiveJob(5, 1000, "Young Ellen");
+                bool success = client.ReceiveJob(5, 5000, "Young Ellen");
+                Console.WriteLine("Job proccesed successfully: {0}", success);
+                Console.ReadKey();
+                Console.WriteLine("Requesting status");
+                status = client.RequestStatus();
+                Console.WriteLine("Current CPUS available: {0}", status);
+                success = client.ReceiveJob(5, 5000, "Young Ellen");
+                Console.WriteLine("Job proccesed successfully: {0}", success);
+                Console.ReadKey();
+                Console.WriteLine("Requesting status");
+                status = client.RequestStatus();
+                Console.WriteLine("Current CPUS available: {0}", status);
+                success = client.ReceiveJob(5, 5000, "Young Ellen");
+                Console.WriteLine("Job proccesed successfully: {0}", success);
+                Console.ReadKey();
+                Console.WriteLine("Requesting status");
+                status = client.RequestStatus();
+                Console.WriteLine("Current CPUS available: {0}", status);
+                success = client.ReceiveJob(5, 5000, "Young Ellen");
                 Console.WriteLine("Job proccesed successfully: {0}", success);
                 Console.ReadKey();
             }

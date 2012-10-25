@@ -157,8 +157,11 @@ namespace SchedulingBenchmarking
             State state = job.State;
             if (state == State.Submitted)
             {
-                cores -= job.CPUsNeeded;
                 Status.Add(job);
+            }
+            if (state == State.Running)
+            {
+                cores -= job.CPUsNeeded;
             }
             else if (state == State.Cancelled)
             {
