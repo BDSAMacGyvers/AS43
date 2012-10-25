@@ -4,3 +4,10 @@ obj
 
 # mstest test results
 TestResults
+
+*.suo
+*.V11.suo
+
+*.csproj
+
+.DS_Store
