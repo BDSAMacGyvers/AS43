@@ -17,6 +17,10 @@ namespace SchedulingBenchmarking
     public class BenchmarkSystem
     {
         private int cores = 30;
+        public int Cores
+        {
+            get { return cores; }
+        }
 
         //The sheduler that holds incoming jobs. 
         #if DEBUG
